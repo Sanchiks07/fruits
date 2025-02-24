@@ -10,7 +10,7 @@
         </label>
 
         <label>
-            <input class="ieraksts" name="name" value="<?= $fruit["name"] ?? "" ?>" />
+            <input class="ieraksts" name="name" value="<?= htmlspecialchars($_POST["name"] ?? $fruit["name"] ?? "")?>" />
             <br><button type="submit">Saglabāt</button>
         </label>
 
