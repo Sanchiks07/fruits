@@ -2,14 +2,7 @@
 <?php require "views/components/navbar.php" ?>
 
 <div class="container">
-    <h1>Izveido bloga ierakstu</h1>
-
-    <p>
-        Kā tu šodien jūties?<br>
-        Par ko tu domā?<br>
-        Kāds ir šodienas "daily meme"?<br>
-        Kādu jaunu faktu uzzināji?
-    </p>
+    <h1>Izveido augli</h1>
 
     <form method="POST">
         <label><input class="ieraksts" name="name" value="<?= $_POST['name'] ?? "" ?>" placeholder="Izveidot augli.." ></input></label>

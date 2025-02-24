@@ -2,7 +2,7 @@
 <?php require "views/components/navbar.php" ?>
 
 <div class="container">
-    <h1>Rediģē savu ierakstu</h1>
+    <h1>Rediģē savu augli</h1>
 
     <form method="POST">
         <label>
@@ -10,7 +10,7 @@
         </label>
 
         <label>
-            <input class="ieraksts" name="name"><?= $fruit["name"] ?? "" ?></input>
+            <input class="ieraksts" name="name" value="<?= $fruit["name"] ?? "" ?>" />
             <br><button type="submit">Saglabāt</button>
         </label>
 

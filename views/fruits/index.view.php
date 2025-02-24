@@ -1,4 +1,4 @@
-<?php require "views/components/header.php" ?> <!-- obligāti jāpieraksta php, lai strādātu -->
+<?php require "views/components/header.php" ?>
 <?php require "views/components/navbar.php" ?>
 
     <div class="container">
@@ -10,7 +10,7 @@
             <input name="search_query" value="<?= $_GET["search_query"] ?? "" ?>" placeholder="Atlasīt.." />
             </label>
             
-            <button class="search_save"><img src="css/search.png" height=15px width=auto>Atlasīt</button>
+            <button class="search_save">Atlasīt</button>
         </form>
 
         <?php if (count($fruits) == 0) { ?>

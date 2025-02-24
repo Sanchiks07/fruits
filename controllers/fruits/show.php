@@ -4,20 +4,17 @@ if (!isset($_GET["id"]) || $_GET["id"] == "") {
     redirectIfNotFound();
 }
 
-$sql = "SELECT fruits.* FROM fruits
-        LEFT JOIN fruits
-        ON fruits.category_id = categories.id
-        WHERE fruits.id = :id;";
+$sql = "SELECT * FROM fruits WHERE id = :id;";
 $params = ["id" => $_GET["id"]];
 $fruit = $db->query($sql, $params)->fetch();
 
-if (!$post) {
+if (!$fruit) {
     redirectIfNotFound();
 }
 
 $pageTitle = "Auglis";
 $style = "css/style3.css";
 $style2 = "css/kop-style.css";
-require "views/posts/show.view.php";
+require "views/fruits/show.view.php";
 
 ?>

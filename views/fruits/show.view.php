@@ -3,7 +3,6 @@
 
 <div class="container">
     <h1><?= htmlspecialchars($fruit["name"]) ?></h1>
-    <p><?= $fruit["category_name"] ?? "Nav izvēlēta kategorija" ?></p>
 
     <button class="edit" onclick="location.href='edit?id=<?= $fruit['id'] ?>'">Rediģēt</button>
 

@@ -58,11 +58,6 @@ ol li:hover {
     cursor: default;
 }
 
-ol {
-    list-style-type: none;
-    padding: 0;
-}
-
 input {
     border-radius: 50px;
     width: 200px;
