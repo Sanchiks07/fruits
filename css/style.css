@@ -1,0 +1,71 @@
+h1 {
+    color: #ad12eb;
+}
+
+p {
+    font-size: 20px;
+}
+
+label textarea {
+    height: 40px;
+    width: 250px;
+}
+
+.error {
+    color: #e00000;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+/* pogas */
+.search_save {
+    width: auto;
+    height: 27px;
+    font-size: 15px;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 50px;
+    border: 2px solid white;
+    background-color: white;
+}
+
+/* izvads */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+ol li {
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+ol li:hover {
+    transform: scale(1.1);
+    color: #87cdee;
+    font-weight: bold;
+    cursor: default;
+}
+
+ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+input {
+    border-radius: 50px;
+    width: 200px;
+    height: 20px;
+    border: 2px solid white;
+}

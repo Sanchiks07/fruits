@@ -1,0 +1,28 @@
+h1 {
+    color: #ad12eb;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.edit {
+    color: white;
+    padding: 5px;
+    font-size: 15px;
+    background-color: rgb(29, 109, 21);
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.delete {
+    color: white;
+    font-size: 15px;
+    padding: 5px;
+    background-color: rgb(148, 27, 27);
+    border: none;
+    cursor: pointer;
+}

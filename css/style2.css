@@ -1,0 +1,18 @@
+h1 {
+    color: #ad12eb;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    font-size: 20px;
+    width: 1400px;
+    height: auto;
+}
+
+/* navbar */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
