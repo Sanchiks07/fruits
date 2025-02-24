@@ -2,11 +2,15 @@
 <?php require "views/components/navbar.php" ?>
 
     <div class="container">
-        <h1>Blogs</h1>
+        <h1>Augļi</h1>
 
         <form>
-            <input name="search_query" value="<?= $_GET["search_query"] ?? "" ?>" placeholder="Meklēt.." />
-            <button class="search_save"><img src="css/search.png" height=15px width=auto> Meklēt</button>
+            <label>
+            Nosaukums satur: 
+            <input name="search_query" value="<?= $_GET["search_query"] ?? "" ?>" placeholder="Atlasīt.." />
+            </label>
+            
+            <button class="search_save"><img src="css/search.png" height=15px width=auto>Atlasīt</button>
         </form>
 
         <?php if (count($fruits) == 0) { ?>

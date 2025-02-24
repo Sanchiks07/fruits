@@ -5,7 +5,7 @@ require "Validator.php";
 if(isset($_GET["id"])) {
     $sql = "SELECT * FROM fruits WHERE id = :id;";
     $params = ["id" => $_GET["id"]];
-    $post = $db->query($sql, $params)->fetch();
+    $fruit = $db->query($sql, $params)->fetch();
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     else if (empty($errors)) {
         $sql = "UPDATE fruits SET name = :name WHERE id = :id;";
         $params = ["name" => $_POST["name"], "id" => $_POST["id"]];
-        $post = $db->query($sql, $params)->fetch();
+        $fruit = $db->query($sql, $params)->fetch();
         
         header("Location: /show?id=" . $_POST["id"]);
         exit();

@@ -6,7 +6,7 @@
 
     <form method="POST">
         <label>
-            <input type="hidden" name="id" value="<?= $post["id"] ?>" />
+            <input type="hidden" name="id" value="<?= $fruit["id"] ?>" />
         </label>
 
         <label>

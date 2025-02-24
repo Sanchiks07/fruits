@@ -9,7 +9,7 @@ $sql = "SELECT fruits.* FROM fruits
         ON fruits.category_id = categories.id
         WHERE fruits.id = :id;";
 $params = ["id" => $_GET["id"]];
-$post = $db->query($sql, $params)->fetch();
+$fruit = $db->query($sql, $params)->fetch();
 
 if (!$post) {
     redirectIfNotFound();

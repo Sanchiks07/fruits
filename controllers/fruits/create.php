@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     else if (empty($errors)) {
         $sql = "INSERT INTO fruits (name) VALUES (:name)";
         $params = ["name" => $_POST["name"]];
-        $post = $db->query($sql, $params)->fetch();
+        $fruit = $db->query($sql, $params)->fetch();
         
         header("Location: /");
         exit();
