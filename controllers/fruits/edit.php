@@ -12,8 +12,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     $errors = [];
 
-    if (!Validator::string($_POST["name"], max: 40)) {
-        $errors["name"] = "Saturam jābūt ievadītam, bet ne garākam par 40 rakstzīmēm";
+    if (!Validator::string($_POST["name"], min: 2, max: 40)) {
+        $errors["name"] = "Augļa nosaukumam jābūt no 2 līdz 40 rakstzīmēm garam";
     }
     else if (empty($errors)) {
         $sql = "UPDATE fruits SET name = :name WHERE id = :id;";
